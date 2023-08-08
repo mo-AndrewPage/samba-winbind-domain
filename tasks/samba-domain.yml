@@ -56,7 +56,7 @@
   notify: restart Samba related services
 
 - name: /etc/krb5.conf
-  tenplate:
+  template:
     src: krb5.conf.j2
     dest: /etc/krb5.conf
   notify: restart Samba related services
