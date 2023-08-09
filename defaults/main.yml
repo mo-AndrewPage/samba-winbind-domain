@@ -10,13 +10,13 @@ samba_pkg_el7:
   - expect
 pam_files:
   - fingerprint-auth
-  #- fingerprint-auth-ac
+  - fingerprint-auth-ac
   - password-auth
-  #- password-auth-ac
+  - password-auth-ac
   - smartcard-auth
-  #- smartcard-auth-ac
+  - smartcard-auth-ac
   - system-auth
-  #- system-auth-ac
+  - system-auth-ac
 admin_domain_user: "Adminisrator"
 workgroup: "CONTOSO"
 realm: "CONTOSO.LOCAL"
