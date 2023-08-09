@@ -3,6 +3,8 @@
 - name: print facts
   debug:
     msg: "ansible_os_family: {{ ansible_os_family }} ansible_distribution_version: {{ ansible_distribution_version }}"
+  when: true
+  check_mode: false
 
 - name: Install Samba software
   yum:
