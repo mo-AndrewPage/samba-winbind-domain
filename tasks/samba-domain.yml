@@ -41,9 +41,9 @@
     regexp: '^password.*sufficient.*pam_winbind\.so.*'
   with_items:
    - "password-auth"
-   - "password-auth-ac"
+   #- "password-auth-ac"
    - "system-auth"
-   - "system-auth-ac"
+   #- "system-auth-ac"
   notify: restart Samba related services
 
 - name: /etc/samba/common-dc.conf
