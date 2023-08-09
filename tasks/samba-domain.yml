@@ -7,7 +7,7 @@
     name: "{{ item }}"
   with_items:
     - "{{ samba_pkg_el7 }}"
-  when: ansible_os_family == "RedHat" and ansible_distribution_version|int == 7
+  when: ansible_os_family == "RedHat" and ansible_distribution_version|int == 8
 
 - name: PAM config files pam_winbind.so
   lineinfile:
